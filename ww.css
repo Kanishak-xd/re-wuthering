@@ -1,0 +1,221 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Ubuntu+Sans:ital,wght@0,100..800;1,100..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Rationale&family=Ubuntu+Sans:ital,wght@0,100..800;1,100..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Forum&family=Inter:wght@100..900&family=Rationale&family=Ubuntu+Sans:ital,wght@0,100..800;1,100..800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-optical-sizing: auto;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    overflow: hidden; 
+}
+
+section {
+    height: 100vh; 
+    width: 100%;
+}
+
+
+/* Header */
+
+header {
+    width: 100%;
+    background-color: transparent;
+    position: fixed;
+}
+
+header, .header-container, .nav-bar {
+    display: flex;
+    flex-direction: row;
+}
+
+.header-container {
+    justify-content: space-between;
+    align-items: center;
+}
+
+.head-wrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin: 0 100%;
+}
+
+.name {
+    font-size: 100%;
+    cursor: default;
+    color: #fff;
+    font-family: "Forum", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    opacity: 78%;
+    margin-left: 10%;
+    margin-top: 1%;
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+}
+
+.name h1 {
+    letter-spacing: 1.5px;
+}
+
+.logo { 
+    margin-left: 150%;
+    margin-top: 3%;
+    margin-bottom: 3%;
+}
+
+.logo-img {
+    margin-top: 10px;
+    padding: 0;
+
+}
+
+.nav-bar {
+    margin-left: 70%;
+}
+
+.home-btn-0, .resonators-btn-0, .echoes-btn-0  {
+    margin-left: 45%;
+    text-decoration: none;
+}
+
+.home-btn, .resonators-btn, .echoes-btn {
+    cursor: pointer;
+    font-family: 'Rationale', sans-serif;
+    font-weight: 200;
+    font-size: 1.5em;
+    color: #fff;
+    margin-left: 0%;
+    text-shadow: 2px 3px 5px rgba(0, 0, 0, 0.5);
+}
+.home-btn:hover, .resonators-btn:hover, .echoes-btn:hover {
+    color: #FFF3CF;
+}
+
+/* Game Info */
+
+.home {
+    min-height: 100vh;
+    width: 100%;
+    background-image: url('https://i.pinimg.com/originals/92/4a/3a/924a3a58e76ff4b7ea2f8600a519c54b.jpg');
+}
+
+.about-game {
+    width: 27%;
+    margin: 17% 10% 13% 68%;
+    transform: translate(0, 0);
+    transition: transform 0.5s ease;
+}
+
+.about-game:hover {
+    transform: translate(5px, -5px);
+}
+
+.p1 {
+    cursor: default;
+    font-family: 'Inter', sans-serif;
+    font-weight: 250;
+    font-size: 130%;
+    color: #fff;
+    text-shadow: 2px 3px 5px rgba(0, 0, 0, 0.5);
+    text-align: center;
+}
+
+
+/* Install Buttons */
+
+.install-buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.play-store-btn, .app-store-btn, .windows-btn {
+    border: 1px solid #fff;
+    margin-bottom: 0;
+    padding-bottom: 0;
+    border-radius: 10px;
+    width: 12.4%;
+    padding-bottom: 0px;
+    transform: translate(0, 0);
+    transition: transform 0.2s ease;
+}
+
+.play-store-btn:hover, .app-store-btn:hover, .windows-btn:hover {
+    transform: translate(0px, -6.5px);
+}
+
+.play-store img , .app-store img , .official-website img{
+    margin: 0px;
+    padding: 0px;
+    margin-bottom: -4px;
+}
+
+/* RESONATORS PAGE */
+
+/* .resonators {
+    width: 100%;
+    min-height: 100vh;
+    background-image: url('https://i.pinimg.com/originals/92/4a/3a/924a3a58e76ff4b7ea2f8600a519c54b.jpg');
+} */
+
+
+/* frame */
+/* 
+.frame {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    margin-bottom: 0px;
+    background-color: transparent;
+    overflow-x: auto;
+    height: 100vh;
+    scroll-snap-type: x mandatory;
+}
+
+.frame::-webkit-scrollbar {
+    display: none;
+}
+*/
+
+/* Character Boxes */
+
+/* .char-box-1, .char-box-2, .char-box-3, .char-box-4, 
+.char-box-5, .char-box-6, .char-box-7, .char-box-8, .char-box-9, .char-box-10 {
+    flex: 0 0 auto;
+    width: 11%;
+    margin-left: 10px;
+    margin-right: 10px;
+    background-color: black;
+    height: 88%;
+    scroll-snap-align: start;
+} */
+
+/* Text Selection Color */
+
+::selection {
+    background-color: none;
+    color: #FFF3CF;
+}
+
+::-moz-selection {
+    background-color: none;
+    color: #FFF3CF;
+}
+
+::-webkit-selection {
+    background-color: none;
+    color: #FFF3CF;
+}
